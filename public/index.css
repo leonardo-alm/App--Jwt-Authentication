@@ -1,0 +1,174 @@
+body {
+    background-color: rgb(18, 18, 20);
+    color: rgb(168, 168, 179);
+}
+
+*,
+html,
+body {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+.centralize {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.home-link {
+    margin-top: 200px;
+    padding: 20px;
+    width: 300px;
+    background-color: rgb(130, 87, 229);
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.home-link:hover {
+    opacity: 0.8;
+}
+
+.form {
+    background-color: rgb(40, 39, 44);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 60px;
+    margin-top: 250px;
+}
+
+.client-form {
+    margin-top: 100px;
+}
+
+button,
+input {
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    padding: 0px 2.65em;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: rgb(130, 87, 229);
+    border-color: rgb(130, 87, 229);
+    opacity: 1;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+button:disabled {
+    cursor: default;
+    opacity: 0.3;
+}
+
+input {
+    margin-bottom: 10px;
+    background: rgb(18, 18, 20);
+    border-color: rgb(18, 18, 20);
+}
+
+input:focus {
+    border-color: rgb(130, 87, 229);
+}
+
+input:focus {
+    outline: 0px;
+}
+
+a {
+    color: whitesmoke;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.cancel {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    margin-top: -5px;
+}
+
+.nav-links {
+    width: 100vw;
+    background: rgb(130, 87, 229);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 6px 20px;
+    font-size: 18px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(130, 87, 229);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(130, 87, 229);
+    color: rgb(255, 255, 255);
+    margin-top: 250px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+th {
+    font-weight: bold;
+}
+
+tr td:nth-last-child(-n+2):hover {
+    cursor: pointer;
+    background-color: rgb(40, 39, 44);
+}
+
+tr td:nth-last-child(-n+2) {
+    text-align: center;
+}
+
+td:nth-last-child(1) {
+    border-left: none;
+}
+
+td:nth-last-child(2) {
+    border-right: none;
+}
+
+.text-danger {
+    color: #e74c3c;
+}
