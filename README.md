@@ -1,4 +1,4 @@
-# Adopet
+# Authentication App
 
 This is a React.js application where you can Register and Login as a User. Once logged in, you can perform CRUD Operations on clients. This App can be tested
 along with this [API](https://github.com/leonardo-alm/API--Jwt-Authentication) 

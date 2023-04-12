@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 interface IClientForm {
-    actionFunction: (_name: string, _email: string, _phone: string, _address: string) => void;
+    actionFunction: (name: string, email: string, phone: string, address: string) => void;
     action: string;
     name: string;
     email: string;
