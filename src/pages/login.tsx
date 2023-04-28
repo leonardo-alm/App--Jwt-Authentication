@@ -36,14 +36,13 @@ const LoginPage: React.FunctionComponent<IPage> = props => {
                 userContext.Login(response.data.username, response.data.token);
                 navigate('/');
             }
-            else {
-                setError(response.data.msg);
-                setAuthing(false);
-            }
         }
-        catch (error) {
-            setError('Unable to sign in, please try again!');
-            logging.error(error, 'Login');
+        catch (error: any) {
+            const errorMessage = error.response.data.message;
+            if (errorMessage) setError(errorMessage);
+            else setError('Unable to register, please try again!');
+
+            logging.error(error, 'Register');
             setAuthing(false);
         }
     }

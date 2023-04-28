@@ -41,14 +41,13 @@ const RegisterPage: React.FunctionComponent<IPage> = props => {
             if (response.status === 201) {
                 navigate('/login')
             }
-            else {
-                const error = response.data.msg;
-                setError(error);
-                setAuthing(false);
-            }
         }
-        catch (error) {
-            setError('Unable to register, please try again!');
+
+        catch (error: any) {
+            const errorMessage = error.response.data.message;
+            if (errorMessage) setError(errorMessage);
+            else setError('Unable to register, please try again!');
+
             logging.error(error, 'Register');
             setAuthing(false);
         }
